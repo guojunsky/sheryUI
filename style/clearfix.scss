@@ -1,0 +1,5 @@
+@import './mixins/clearfix.scss';
+
+.shery-clearfix {
+  @include clearfix;
+}

@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents":{
+        "shery-loading": "../loading/loading"
+    }
+}
