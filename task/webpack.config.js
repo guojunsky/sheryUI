@@ -82,7 +82,7 @@ module.exports = {
         test: /\.vue$/,
         loader:  'wechat-minap-loader',
         options: {
-          path: r('../'),
+          // path: r('../'),
           dist: './dist'
         }
       }

@@ -1,54 +1,66 @@
 <template>
-  <view class="container">
-    <view class="header">
-      {{nickName}}
-    </view>
-    <shery-cell title="基础组件" isLink  required label="火车票、机票、汽车票、轮船" />
-    <shery-cell title="表单组件" isLink />
-    <shery-cell title="布局组件" isLink />
-    <shery-cell title="高级组件" isLink="{{true}}" border="{{false}}" />
-    <shery-loading />
-    <shery-button block type="primary">提交表单</shery-button>
+<view class="home-box">
+  <view class="home-box__header">
+    <image src="http://pic12.secooimg.com/comment/18/10/e98a45cca4de4c489b6619d4f1d225eb.GIF" />
   </view>
+</view>
 </template>
 
 <script>
-  import store from '../../store';
-  const { util, shery } = global;
-  const { SheryPage} = shery;
+import store from '../../store';
+const {
+    util,
+    shery
+} = global;
+const {
+    SheryPage
+} = shery;
 
-  SheryPage(store, {
-    data:{
-       nickName: 'shery 优雅'
+SheryPage(store, {
+    data: {
+        nickName: 'shery 优雅'
     },
-    onLoad(){
-    console.log('观察当前对象', this, shery)
-  },
-  onPullDownRefresh(){
-    setTimeout(()=>{
-      wx.stopPullDownRefresh();
-    }, 1000);
-  }
-  });
+    onLoad() {
+        console.log('观察当前对象', this, shery)
+    },
+    handle() {
+        wx.navigateTo({
+            url: '/shiku/pages/home/index'
+        });
+    },
+    onPullDownRefresh() {
+        setTimeout(() => {
+            wx.stopPullDownRefresh();
+        }, 1000);
+    }
+});
 </script>
 
 <style lang="scss">
- page{
-   height: 100%;
- }
- .container{
-   height: 100%;
-   background-color: #f9f9f9
- }
- .header{
-   background-color: #1890ff;
-   display: flex;
-   width: 100%;
-   height: 180rpx;
-   justify-content: center;
-   align-items: center;
-   color: #fff;
-   font-weight: 700;
-   font-size: 32rpx;
- }
+page {
+    height: 100%;   
+}
+.home-box {
+    height: 100%;
+    background-color: #fad19d;
+    &__header{
+       height: 487rpx;
+       image{
+         width: 100%;
+         height: 100%;
+       }
+    }
+}
+
+.header {
+    background-color: #1890ff;
+    display: flex;
+    width: 100%;
+    height: 180rpx;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 32rpx;
+}
 </style>
