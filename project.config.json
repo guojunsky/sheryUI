@@ -14,7 +14,7 @@
 	"libVersion": "2.3.0",
 	"appid": "wx94365bbb386b3e6c",
 	"projectname": "sheryUI",
-	"miniprogramRoot": "dist/",
+	"miniprogramRoot": "./dist",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
