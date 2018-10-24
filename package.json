@@ -28,7 +28,7 @@
     "vue-template-compiler": "^2.5.17",
     "webpack": "^4.20.2",
     "wechat-mina-loader": "0.0.7",
-    "wechat-minap-loader": "0.0.5"
+    "wechat-minap-loader": "^0.1.4"
   },
   "scripts": {
     "build": "node ./task/build"

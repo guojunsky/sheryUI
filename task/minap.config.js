@@ -15,16 +15,24 @@ module.exports = {
       "backgroundColor": "#F8F8F8",
       "navigationStyle": "custom",
       "backgroundTextStyle": "dark"
-    }
+    },
+    subpackages: [{
+      "root": "shiku",
+      "pages": [
+        "pages/home/index"
+      ]
+    }]
   },
   components: [
     'components/cell-group/cell-group',
-     'components/cell/cell',
-     'components/icon/icon',
-     'components/loading/loading',
-     'components/button/button',
-     'components/row/row',
-     'components/col/col'
+    'components/cell/cell',
+    'components/icon/icon',
+    'components/loading/loading',
+    'components/button/button',
+    'components/row/row',
+    'components/col/col',
+    'components/badge/badge',
+    'components/badge-group/badge-group',
   ],
   app: r('../app.js')
 }

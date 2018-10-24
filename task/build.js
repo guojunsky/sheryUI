@@ -26,11 +26,11 @@ var renderConfig = webpackConfig;
  */
 function getEntry(config, entrys, root = './'){
    Object.assign(entrys, config.pages.reduce((en, i) => {
-    en[i] = resolve(process.cwd(), root, `${i}.vue`)
+    en[ root==='./' ? i : root+'/'+i] = resolve(process.cwd(), root, `${i}.vue`)
     return en;
   }, {}));
-  if(Array.isArray(config.subPackages) && config.subPackages.length>0 ){
-     config.subPackages.forEach((it)=>{
+  if(Array.isArray(config.subpackages) && config.subpackages.length>0 ){
+     config.subpackages.forEach((it)=>{
           getEntry(it, entrys, it.root);
      })
   }
