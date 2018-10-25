@@ -14,6 +14,20 @@
         <view class="home-box__ad">
             <image src="http://pic12.secooimg.com/comment/18/10/f353b01042a146768ff0a809845a96e7.jpg" />
         </view>
+        <view class="home-box__tlist">
+            <view class="home-box__tp">
+                <view class="home-box__tp-l"></view>
+                <view class="home-box__tp-r"></view>
+            </view>
+            <view class="home-box__tp home-box__tp--two">
+                <view class="home-box__tp-l"></view>
+                <view class="home-box__tp-r"></view>
+            </view>
+            <view class="home-box__tp home-box__tp--three">
+                <view class="home-box__tp-l"></view>
+                <view class="home-box__tp-r"></view>
+            </view>
+        </view>
     </view>
 </template>
 
@@ -49,11 +63,12 @@
 
 <style lang="scss">
     page {
-        height: 100%;
+        // height: 100%;
+        margin: 0;
     }
     
     .home-box {
-        height: 100%;
+        // height: 100%;
         background-color: #fad19d;
         image {
                 width: 100%;
@@ -83,6 +98,18 @@
         }
         &__foor{
            height: 170rpx;
+        }
+        &__tp{
+            background-image: url('//pic12.secooimg.com/comment/18/10/c04431b946894ce1a352d0ce0940c19a.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 504rpx;
+            &--two{
+              background-image: url('//pic12.secooimg.com/comment/18/10/6644b58e00354853be2fbac01f5a2663.jpg');
+            }
+            &--three{
+                background-image: url('//pic12.secooimg.com/comment/18/10/1f5bd66191c54eaab0707a90fc6fb2ce.jpg');
+            }
         }
     }
 </style>
