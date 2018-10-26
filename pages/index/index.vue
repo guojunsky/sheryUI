@@ -29,6 +29,7 @@
             </view>
         </view>
     </view>
+    <shery-swiper />
 </template>
 
 <script>

@@ -5,7 +5,6 @@ const r = url => resolve(__dirname, url);
 module.exports = {
   json: {
     pages: [
-      'pages/topic/index',
       'pages/index/index',
       'pages/logs/logs',
     ],
@@ -34,6 +33,7 @@ module.exports = {
     'components/col/col',
     'components/badge/badge',
     'components/badge-group/badge-group',
+    'components/swiper/swiper'
   ],
   app: r('../app.js')
 }
