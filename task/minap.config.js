@@ -33,6 +33,7 @@ module.exports = {
     'components/col/col',
     'components/badge/badge',
     'components/badge-group/badge-group',
+    'components/swiper/swiper'
   ],
   app: r('../app.js')
 }

@@ -28,6 +28,7 @@
                 <view class="home-box__tp-r"></view>
             </view>
         </view>
+        <shery-swiper />
     </view>
 </template>
 
