@@ -1,0 +1,12 @@
+{
+    "navigationBarTitleText": "首页配置3333",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#fad19d",
+    "usingComponents":{
+        "shery-cell": "../../components/cell/cell",
+        "shery-loading": "../../components/loading/loading",
+        "shery-button": "../../components/button/button",
+        "row": "../../components/row/row",
+        "col": "../../components/col/col"
+    }
+}

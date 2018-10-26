@@ -5,6 +5,7 @@ const r = url => resolve(__dirname, url);
 module.exports = {
   json: {
     pages: [
+      'pages/topic/index',
       'pages/index/index',
       'pages/logs/logs',
     ],
