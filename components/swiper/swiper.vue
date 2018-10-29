@@ -40,16 +40,16 @@ SheryComponent({
     },
     data: {
         vs: [
-            '//pic12.secooimg.com/comment/18/10/44f30b2101ca443e83397197f1671f73.jpg',
-            '//pic12.secooimg.com/comment/18/10/e3a0e174d8274042a1942bc0415829e9.jpg',
-            '//pic12.secooimg.com/comment/18/10/1b1ea29248cd418cb36bb704be5994f4.jpg',
-            '//pic12.secooimg.com/comment/18/10/9bbdba32ba1a4c07ad1c9c753f4e974b.jpg',
-            '//pic12.secooimg.com/comment/18/10/db9540c29c574556836a3c06e0c737d1.jpg',
-            '//pic12.secooimg.com/comment/18/10/44f30b2101ca443e83397197f1671f73.jpg',
-            '//pic12.secooimg.com/comment/18/10/e3a0e174d8274042a1942bc0415829e9.jpg',
-            '//pic12.secooimg.com/comment/18/10/1b1ea29248cd418cb36bb704be5994f4.jpg',
-            '//pic12.secooimg.com/comment/18/10/9bbdba32ba1a4c07ad1c9c753f4e974b.jpg',
-            '//pic12.secooimg.com/comment/18/10/db9540c29c574556836a3c06e0c737d1.jpg'
+            'http://pic12.secooimg.com/comment/18/10/44f30b2101ca443e83397197f1671f73.jpg',
+            'http://pic12.secooimg.com/comment/18/10/e3a0e174d8274042a1942bc0415829e9.jpg',
+            'http://pic12.secooimg.com/comment/18/10/1b1ea29248cd418cb36bb704be5994f4.jpg',
+            'http://pic12.secooimg.com/comment/18/10/9bbdba32ba1a4c07ad1c9c753f4e974b.jpg',
+            'http://pic12.secooimg.com/comment/18/10/db9540c29c574556836a3c06e0c737d1.jpg',
+            'http://pic12.secooimg.com/comment/18/10/44f30b2101ca443e83397197f1671f73.jpg',
+            'http://pic12.secooimg.com/comment/18/10/e3a0e174d8274042a1942bc0415829e9.jpg',
+            'http://pic12.secooimg.com/comment/18/10/1b1ea29248cd418cb36bb704be5994f4.jpg',
+            'http://pic12.secooimg.com/comment/18/10/9bbdba32ba1a4c07ad1c9c753f4e974b.jpg',
+            'http://pic12.secooimg.com/comment/18/10/db9540c29c574556836a3c06e0c737d1.jpg'
         ].map(it => ({
             img: it,
             title: 'GUCCI单肩包',
@@ -59,7 +59,7 @@ SheryComponent({
     },
     methods: {
         handleChange(e) {
-            //   console.log(current);
+              console.log(e);
             this.store.data.current = e.detail.current;
             this.store.update();
         }
